@@ -1,0 +1,35 @@
+@import "colors.scss";
+.landing{
+  .top-logo{
+    background-color: $black;
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+  }
+  .form-signin{
+    background-color: $white;
+    padding: 40px;
+    width: 100%;
+  }
+  .form-signin input {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+  }
+  .form-signin .btn-lg{
+    width: 100%;
+  }
+  .link-signin{
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+}

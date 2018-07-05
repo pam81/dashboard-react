@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import {  withRouter} from 'react-router-dom'
+import { logout } from '../utils/AuthService';
 
-export default class Dashboard extends Component {
+class Dashboard extends Component {
 
+  out = () => {
+    logout();
+    this.props.history.push("/login");
+  }
   render (){
     return (
       <div>
         Dashboard view
-        <Link to="/login">Login</Link>
+
+        <button onClick={this.out} >Logout</button>
        
       </div>
     )
   }
 }
+export default withRouter(Dashboard);

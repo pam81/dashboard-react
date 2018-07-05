@@ -1,0 +1,11 @@
+@import "colors.scss";
+input{
+  padding: 10px;
+  &:focus{
+    outline: 1px solid $link;
+    padding: 10px;
+  }
+  &.error{
+    outline: 1px solid $error;
+  }
+}
